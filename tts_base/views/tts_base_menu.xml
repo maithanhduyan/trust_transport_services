@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top menu item -->
+   <menuitem name="TTS"
+        id="tts_base_menu_root"
+        sequence="1"
+        web_icon="tts_base,static/description/icon.png"
+        groups="base.group_user"/>
+
+    <!-- Routes Menu -->
+    <menuitem id="tts_base_routes_menu"
+        name="Routes"
+        parent="tts_base_menu_root"
+        sequence="2"/>
+    
+    <menuitem id="tts_base_routes_list_menu"
+        action="tts_base_action_route"
+        parent="tts_base_routes_menu"
+        sequence="1"/>
+
+    <!-- Parcel Menu -->
+    <menuitem id="tts_base_parcel_menu"
+        name="Parcel"
+        parent="tts_base_menu_root"
+        sequence="2"/>
+
+    <menuitem id="tts_base_parcel_list_menu"
+        action="tts_base_action_parcels"
+        parent="tts_base_parcel_menu"
+        sequence="1"/>
+
+    <!-- Item Menu -->
+    <menuitem id="tts_base_items_menu"
+        name="Items"
+        parent="tts_base_menu_root"
+        sequence="2"/>
+    
+    <menuitem id="tts_base_items_list_menu"
+        name="List"
+        action="tts_base_action_items"
+        parent="tts_base_items_menu"
+        sequence="1"/>
+
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tts_item,tts.item,model_tts_item,base.group_user,1,1,1,1
+access_tts_route,tts.route,model_tts_route,base.group_user,1,1,1,1
+access_tts_parcel,tts.parcel,model_tts_parcel,base.group_user,1,1,1,1
