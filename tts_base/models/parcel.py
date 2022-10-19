@@ -7,7 +7,7 @@ class Parcel(models.Model):
     _description = 'Parcel'
 
     tracking_code = fields.Char(
-        'TrackingCode', required=True, string='Tracking Code')
+        'TrackingCode', required=True)
     active = fields.Boolean(default=True)
     customer = fields.Many2one(
         'res.partner', string='Customer', on_delete='restrict')
